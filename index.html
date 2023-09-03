@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean's Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Add a background color and font styles */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 36px;
+        }
+        
+        /* Navigation Styles */
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        
+        /* Project Cards */
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        /* Review Styles */
+        .review {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        /* Image Styles */
+        .portfolio-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            /* Add animation here */
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sean's Portfolio</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card fade-in">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project-card fade-in">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </section>
+        
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <div class="review fade-in">
+                <p>"I loved working with Sean! His work is exceptional."</p>
+                <p>- Client A</p>
+            </div>
+            <div class="review fade-in">
+                <p>"Sean is a highly skilled developer. I highly recommend him."</p>
+                <p>- Client B</p>
+            </div>
+            <!-- Add more reviews as needed -->
+        </section>
+        
+        <!-- Add an image from your S3 bucket here -->
+        <img src="https://myterraformbucketgithubwebsite.s3.ap-south-1.amazonaws.com/download.jpeg" alt="Portfolio Image" class="portfolio-image">
+    </div>
+    
+    <footer>
+        &copy; 2023 Sean's Portfolio
+    </footer>
+</body>
+</html>
